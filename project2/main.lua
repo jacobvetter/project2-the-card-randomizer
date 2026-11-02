@@ -88,12 +88,29 @@ function draw()
         
         end
       end
-  
-      
     end
   --unworking
-function mouseIsPressed()
-  if mouseIsPressed == true then
-    text(random(deckCards7), 669, 325)
-  end
+function keyPressed()
+ if key == 'r' then
+  deckCards1=random(deckCards)
+    deckCards2=random(deckCards)
+    deckCards3=random(deckCards)
+    deckCards4=random(deckCards)
+    deckCards5=random(deckCards)
+    deckCards6=random(deckCards)
+    deckCards7=random(deckCards)
+ fill(0)
+    text(deckCards1, 400, 350)
+    text(deckCards2, 493, 325)
+    text(deckCards3, 577, 350)
+    text(deckCards4, 436, 439)
+    text(deckCards5, 527, 464)
+    text(deckCards6, 622, 439)
+    text(deckCards7, 669, 325)
+ end
+
+
+ if key == 's' then
+ save('PROJECT2.png')
+ end
 end
