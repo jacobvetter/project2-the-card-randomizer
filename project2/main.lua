@@ -112,5 +112,22 @@ function keyPressed()
 
  if key == 's' then
  save('PROJECT2.png')
+ if Key == 'r' then
+   deckCards1=random(deckCards)
+    deckCards2=random(deckCards)
+    deckCards3=random(deckCards)
+    deckCards4=random(deckCards)
+    deckCards5=random(deckCards)
+    deckCards6=random(deckCards)
+    deckCards7=random(deckCards)
+
+    text(deckCards1, 400, 350)
+    text(deckCards2, 493, 325)
+    text(deckCards3, 577, 350)
+    text(deckCards4, 436, 439)
+    text(deckCards5, 527, 464)
+    text(deckCards6, 622, 439)
+    text(deckCards7, 669, 325)
  end
+end
 end
